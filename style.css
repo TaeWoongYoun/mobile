@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+}
+
+.headarea{
+    width: 360px;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.logo{
+    width: 100px;
+    text-align: center;
+    line-height: 65px;
+}
+
+.logo p{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.none{
+    flex-grow: 1;
+}
+
+nav{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    width: 70%;
+    height: 70%;
+}
+
+main{
+    
+}
+
+.content{
+
+}
+
