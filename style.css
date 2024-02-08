@@ -26,11 +26,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5px;
+    text-align: center;
 }
 
 .logo p{
-    font-size: 24px;
+    /* padding-top: 10px; */
+    font-size: 20px;
     font-weight: 900;
 }
 
@@ -45,9 +46,39 @@ nav{
     justify-content: center;
 }
 
+nav:hover~.message{
+    opacity: 1;
+}
+
 nav img{
     width: 50%;
     height: 50%;
+}
+
+.message{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 360px;
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.en{
+    font-weight: 600;
+}
+
+.mode{
+    visibility: visible;
 }
 
 main{
@@ -107,10 +138,6 @@ footer div{
     padding: 5px;
 }
 
-.logo{
-    padding-top: 5px;
-}
-
 .Textf{
     font-size: 12px;
 }
@@ -147,9 +174,10 @@ footer div{
 .footer button{
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     border: none;
+    border-radius: 50%;
     line-height: 50px;
+    background: none;
 }
 
 .footer button img{
