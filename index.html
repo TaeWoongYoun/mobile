@@ -106,4 +106,25 @@
     </div>
 
     <script src="index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var modeM = document.querySelector('.modeM');
+    var message = document.querySelector('.message');
+
+    modeM.addEventListener('click', function(e) {
+        e.stopPropagation();
+        message.classList.toggle('mode');
+    });
+
+    document.addEventListener('click', function(e) {
+        var target = e.target;
+        var isModeM = target.classList.contains('modeM');
+
+        if (!isModeM) {
+            message.classList.remove('mode');
+        }
+    });
+});
+
+    </script>
 </body>
