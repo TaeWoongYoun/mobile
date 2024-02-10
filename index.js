@@ -16,21 +16,21 @@
 //     });
 // });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var modeM = document.querySelector('.modeM');
-    var message = document.querySelector('.message');
+// document.addEventListener('DOMContentLoaded', function() {
+//     var modeM = document.querySelector('.modeM');
+//     var message = document.querySelector('.message');
 
-    modeM.addEventListener('click', function(e) {
-        e.stopPropagation();
-        message.classList.toggle('mode');
-    });
+//     modeM.addEventListener('click', function(e) {
+//         e.stopPropagation();
+//         message.classList.toggle('mode');
+//     });
 
-    document.addEventListener('click', function(e) {
-        var target = e.target;
-        var isModeM = target.classList.contains('modeM');
+//     document.addEventListener('click', function(e) {
+//         var target = e.target;
+//         var isModeM = target.classList.contains('modeM');
 
-        if (!isModeM) {
-            message.classList.remove('mode');
-        }
-    });
-});
+//         if (!isModeM) {
+//             message.classList.remove('mode');
+//         }
+//     });
+// });

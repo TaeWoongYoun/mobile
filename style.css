@@ -70,15 +70,14 @@ nav img{
     justify-content: center;
     border-radius: 50px;
     font-size: 14px;
-    visibility: hidden;
+}
+
+.modeM:hover~.message{
+    z-index: 0;
 }
 
 .en{
     font-weight: 600;
-}
-
-.mode{
-    visibility: visible;
 }
 
 main{
