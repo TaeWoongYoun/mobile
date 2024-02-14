@@ -46,10 +46,6 @@ nav{
     justify-content: center;
 }
 
-nav:hover~.message{
-    opacity: 1;
-}
-
 nav img{
     width: 50%;
     height: 50%;
@@ -70,10 +66,11 @@ nav img{
     justify-content: center;
     border-radius: 50px;
     font-size: 14px;
+    visibility: hidden;
 }
 
-.modeM:hover~.message{
-    z-index: 0;
+nav img:hover~.message{
+    visibility: visible;
 }
 
 .en{
